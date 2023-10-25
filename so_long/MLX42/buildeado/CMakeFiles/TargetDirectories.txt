@@ -1,0 +1,7 @@
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/mlx42.dir
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/edit_cache.dir
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/rebuild_cache.dir
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/list_install_components.dir
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/install.dir
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/install/local.dir
+/Users/jose-mgo/Desktop/so_long/MLX42/buildeado/CMakeFiles/install/strip.dir
