@@ -6,7 +6,7 @@
 /*   By: jose-mgo <jose-mgo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 16:00:10 by jose-mgo          #+#    #+#             */
-/*   Updated: 2023/05/29 13:53:45 by jose-mgo         ###   ########.fr       */
+/*   Updated: 2023/11/23 16:26:17 by jose-mgo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	ft_format3(const char *str, int i, int len, va_list args)
 		len += ft_intsize(uns);
 	}
 	else if (str[i + 1] == 'x' || str[i + 1] == 'X')
-	{	
+	{
 		if (str[i + 1] == 'X')
 			uns = 1;
 		num = va_arg(args, long long);

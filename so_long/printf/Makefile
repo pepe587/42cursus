@@ -21,9 +21,11 @@ $(NAME):$(OBJECTS)
 
 clean:
 	@rm -f $(OBJECTS)
+	@make -C libft2 clean
 
 fclean:
 	@rm -f $(NAME) $(OBJECTS)
+	@make -C libft2 fclean
 
 re: fclean all
 
