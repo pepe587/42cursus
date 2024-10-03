@@ -76,9 +76,7 @@ void	show_window(t_maplen coords, char **map)
 	mlx_t				*window;
 	t_tools				tools;
 	t_tools				*ptr;
-	int					check;
 
-	check = 0;
 	tools.num_collecs = 0;
 	tools.max_collecs = 0;
 	window = mlx_init(coords.x * 64, coords.y * 64, "so_long", false);

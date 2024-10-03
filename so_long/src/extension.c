@@ -21,7 +21,7 @@ int	check_extension(char *str)
 	if (str[i] != 'r' || str[i - 1] != 'e'
 		|| str[i - 2] != 'b' || str[i - 3] != '.')
 		return (ft_printf("Error:\nIncorrect extension,"
-				" insert a .ber file"), 0);
+				" insert a .ber file\n"), 0);
 	return (1);
 }
 
@@ -41,10 +41,8 @@ void	ft_free_matrix(char **map)
 static char	**mallocmatrix(char **array)
 {
 	int		y;
-	int		x;
 	char	**ret;
 
-	x = 0;
 	y = 0;
 	while (array[y])
 		y++;

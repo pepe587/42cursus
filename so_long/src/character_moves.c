@@ -117,20 +117,18 @@ int	move_character(t_tools *tools, enum keys button)
 void	ft_movement(mlx_key_data_t keydata, void *param)
 {
 	t_tools			*tools;
-	int				moves;
 
-	moves = 0;
 	tools = param;
 	if (keydata.action == MLX_PRESS)
 	{
 		if (keydata.key == MLX_KEY_W)
-			moves = move_character(tools, MLX_KEY_W);
+			move_character(tools, MLX_KEY_W);
 		if (keydata.key == MLX_KEY_D)
-			moves = move_character(tools, MLX_KEY_D);
+			move_character(tools, MLX_KEY_D);
 		if (keydata.key == MLX_KEY_A)
-			moves = move_character(tools, MLX_KEY_A);
+			move_character(tools, MLX_KEY_A);
 		if (keydata.key == MLX_KEY_S)
-			moves = move_character(tools, MLX_KEY_S);
+			move_character(tools, MLX_KEY_S);
 		if (keydata.key == MLX_KEY_ESCAPE)
 			mlx_close_window(tools->window);
 	}

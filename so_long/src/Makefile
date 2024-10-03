@@ -13,7 +13,7 @@ $(OBJECTS): %.o: %.c
 
 $(NAME): $(OBJECTS) $(LIBFT)/libft.a $(MLX42)/libmlx42.a $(PRINTF)/libftprintf.a
 	@ar crs $(NAME).a $(OBJECTS)
-	@gcc $(FLAGS)  $(LIBFT)/libft.a $(PRINTF)/libftprintf.a $(MLX42)/libmlx42.a $(NAME).a -framework Cocoa -framework OpenGL -framework IOKit -lglfw -L "/Users/jose-mgo/.brew/opt/glfw/lib/" -o $(NAME)
+	@gcc $(FLAGS) $(OBJECTS) $(LIBFT)/libft.a $(PRINTF)/libftprintf.a $(MLX42)/libmlx42.a $(NAME).a -ldl -lglfw -I include -lglfw  -pthread -lm -o $(NAME)
 	@mv $(NAME) ../
 
 $(LIBFT)/libft.a:
@@ -29,7 +29,7 @@ clean:
 	@rm -f $(OBJECTS) $(NAME).a
 
 fclean: clean
-	@rm -f $(NAME) $(OBJECTS)
+	@rm -f $(NAME)
 
 re: fclean all
 

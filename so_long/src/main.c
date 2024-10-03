@@ -28,7 +28,7 @@ int	main(int argc, char **argv)
 		return (0);
 	map = save_map(argv[1]);
 	if (!map)
-		return (ft_printf("Error\nMap with interspersed line breaks\n"), 0);
+		return (0);
 	coords = get_coordsmap(map);
 	show_window(coords, map);
 	ft_free_matrix(map);

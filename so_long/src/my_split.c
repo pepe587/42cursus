@@ -13,12 +13,11 @@
 #include "../so_long.h"
 #include <stdlib.h>
 
-static char	**ft_free_result(char **result, int size)
+static void	ft_free_result(char **result, int size)
 {
 	while (size > 0)
 		free(result[--size]);
 	free(result);
-	return (result);
 }
 
 static	char	**ft_splitstr(char *s, int numwords, int *lenwords, char c)
@@ -40,7 +39,7 @@ static	char	**ft_splitstr(char *s, int numwords, int *lenwords, char c)
 			return (ft_free_result(ret, i), NULL);
 		ret[i] = ft_substr(s, start, lenwords[i]);
 		if (ret[i] == NULL)
-			return (ret = ft_free_result(ret, i), NULL);
+			return (ft_free_result(ret, i), NULL);
 		start += lenwords[i];
 		i++;
 	}

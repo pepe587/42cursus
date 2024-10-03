@@ -107,6 +107,8 @@ char	**save_map(char *str)
 	read(hash, buffer, lenmap);
 	close(hash);
 	mapa = my_split(buffer, 10);
+	if (!mapa)
+		ft_printf("Error\nMap with interspersed line breaks\n");
 	free(buffer);
 	return (mapa);
 }
